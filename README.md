@@ -23,7 +23,7 @@ time (timestamps of records in songplays broken down into specific units): start
 Configuration File containing AWS credentials
 
 #### etl.py file
-
+Contains functions to download json data from S3, transform it and write into parquet files back into s3
 
 ### How to run python script
 The script is ran from an EMR cluster and requires the creation of IAM role, EMR cluster and S3 bucket for input/output. Once the EMR cluster is created, the script has to be copied to it via SSH channel and run using a command spark-submit
